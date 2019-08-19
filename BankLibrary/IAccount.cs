@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace BankLibrary {
-    interface IAccount {
+    // Библиотека классов, которую будет использовать главный проект Program
+    public interface IAccount {
         // Положить деньги на счет
         void Put(decimal sum);
         // Взять деньги со счета
