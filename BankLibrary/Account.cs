@@ -72,7 +72,7 @@ namespace BankLibrary {
             if (sum <= _sum) {
                 _sum = sum;
                 result = sum;
-                OnWithdrawed(new AccountEventArgs("Сумма " + sum + "снята со счета " + _id, sum));
+                OnWithdrawed(new AccountEventArgs("Сумма " + sum + " снята со счета " + _id, sum));
             }
             else {
                 OnWithdrawed(new AccountEventArgs("Недостаточно денег на счете " + _id, 0));
